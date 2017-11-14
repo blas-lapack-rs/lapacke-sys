@@ -1,0 +1,10 @@
+[package]
+name = "lapacke-sys"
+version = "0.0.1"
+license = "Apache-2.0/MIT"
+authors = ["Ivan Ukhov <ivan.ukhov@gmail.com>"]
+description = "The package provides bindings to LAPACKE."
+documentation = "https://docs.rs/lapacke-sys"
+homepage = "https://github.com/stainless-steel/lapacke-sys"
+repository = "https://github.com/stainless-steel/lapacke-sys"
+readme = "README.md"
