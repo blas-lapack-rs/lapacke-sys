@@ -8,3 +8,6 @@ documentation = "https://docs.rs/lapacke-sys"
 homepage = "https://github.com/stainless-steel/lapacke-sys"
 repository = "https://github.com/stainless-steel/lapacke-sys"
 readme = "README.md"
+
+[dependencies]
+libc = "0.2"
