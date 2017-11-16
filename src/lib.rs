@@ -1,6 +1,9 @@
-//! Bindings to [LAPACKE].
+//! Bindings to [LAPACKE] \(C)
+//!
+//! The usage of the package is explained [here][usage].
 //!
 //! [lapacke]: https://en.wikipedia.org/wiki/LAPACK
+//! [usage]: https://blas-lapack-rs.github.io/usage
 
 #![allow(non_camel_case_types)]
 #![no_std]
@@ -9,11 +12,11 @@ extern crate libc;
 
 use libc::{c_char, c_double, c_float, c_int};
 
-/// A complex number with 64-bit parts.
+/// A complex number with 64-bit parts
 #[allow(bad_style)]
 pub type c_double_complex = [libc::c_double; 2];
 
-/// A complex number with 32-bit parts.
+/// A complex number with 32-bit parts
 #[allow(bad_style)]
 pub type c_float_complex = [libc::c_float; 2];
 
