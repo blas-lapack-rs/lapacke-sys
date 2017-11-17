@@ -1,4 +1,4 @@
-//! Bindings to [LAPACKE] \(C)
+//! Bindings to [LAPACKE] \(C).
 //!
 //! The usage of the package is explained [here][usage].
 //!
