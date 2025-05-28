@@ -5,20 +5,18 @@
 //! [architecture]: https://blas-lapack-rs.github.io/architecture
 //! [lapacke]: https://en.wikipedia.org/wiki/LAPACK
 
-#![allow(non_camel_case_types)]
+#![allow(improper_ctypes, non_camel_case_types)]
 #![no_std]
 
-extern crate libc;
-
-use libc::{c_char, c_double, c_float, c_int};
+use core::ffi::{c_char, c_double, c_float, c_int};
 
 /// A complex number with 64-bit parts.
 #[allow(bad_style)]
-pub type c_double_complex = [libc::c_double; 2];
+pub type c_double_complex = [c_double; 2];
 
 /// A complex number with 32-bit parts.
 #[allow(bad_style)]
-pub type c_float_complex = [libc::c_float; 2];
+pub type c_float_complex = [c_float; 2];
 
 pub const LAPACK_ROW_MAJOR: c_int = 101;
 pub const LAPACK_COL_MAJOR: c_int = 102;

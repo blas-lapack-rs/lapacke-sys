@@ -1,7 +1,8 @@
 [package]
 name = "lapacke-sys"
-version = "0.1.4"
-license = "Apache-2.0/MIT"
+version = "0.2.0"
+edition = "2021"
+license = "Apache-2.0 OR MIT"
 authors = ["Ivan Ukhov <ivan.ukhov@gmail.com>"]
 description = "The package provides bindings to LAPACKE (C)."
 documentation = "https://docs.rs/lapacke-sys"
@@ -10,6 +11,3 @@ repository = "https://github.com/blas-lapack-rs/lapacke-sys"
 readme = "README.md"
 categories = ["external-ffi-bindings", "science"]
 keywords = ["linear-algebra"]
-
-[dependencies]
-libc = "0.2"
